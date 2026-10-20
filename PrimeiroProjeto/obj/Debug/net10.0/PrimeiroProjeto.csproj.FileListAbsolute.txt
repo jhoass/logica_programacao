@@ -13,3 +13,4 @@ C:\Users\joasa\OneDrive\Desktop\c#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net
 C:\Users\joasa\OneDrive\Desktop\c#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net10.0\PrimeiroProjeto.genruntimeconfig.cache
 C:\Users\joasa\OneDrive\Desktop\c#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net10.0\ref\PrimeiroProjeto.dll
 C:\Users\joasa\OneDrive\Desktop\c#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net10.0\Primeiro.058784A0.Up2Date
+C:\Users\joasa\OneDrive\Desktop\c#\PrimeiroProjeto\PrimeiroProjeto\obj\Debug\net10.0\PrimeiroProjeto.sourcelink.json
