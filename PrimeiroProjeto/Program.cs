@@ -1,4 +1,6 @@
 ﻿
+using System;
+using System.Globalization;
 
 /*
 String frase = Console.ReadLine();
@@ -96,6 +98,7 @@ Console.WriteLine(idade);
 Console.WriteLine(altura);
 */
 
+/*
 double x = 3.0;
 double y = 4.0;
 double z = -5.0;
@@ -114,6 +117,31 @@ C = Math.Pow(5.0, 3.0);
 Console.WriteLine("A potencialização de: " + x + " com o valor: " + y + " é de: " + A);
 Console.WriteLine("A potencialização de: " + x + " com valor de 40, resulta em: " + B);
 Console.WriteLine("A potencialização de 5 com 3, resulta em: " + C);
+
+A = Math.Abs(y);
+B = Math.Abs(z);
+C = Math.Abs(7.0);
+
+Console.WriteLine("O valor absoluto de " + y + " resulta em: " + A);
+Console.WriteLine("O valor absoluto de " + z + "resulta em: " + B);
+Console.WriteLine("O valor absoluto de 7.0 é : " + C); */
+
+double largura, comprimento, precoMetroQuadrado, area, preco;
+
+largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+comprimento = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+precoMetroQuadrado = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+area = largura * comprimento;
+preco = area * precoMetroQuadrado;
+
+Console.WriteLine("ÁREA: " + area + CultureInfo.InvariantCulture);
+Console.WriteLine("PREÇO: " + preco.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+
+
 
 
 
