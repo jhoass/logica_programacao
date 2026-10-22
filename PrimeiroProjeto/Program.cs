@@ -125,7 +125,7 @@ C = Math.Abs(7.0);
 Console.WriteLine("O valor absoluto de " + y + " resulta em: " + A);
 Console.WriteLine("O valor absoluto de " + z + "resulta em: " + B);
 Console.WriteLine("O valor absoluto de 7.0 é : " + C); */
-
+/*
 double largura, comprimento, precoMetroQuadrado, area, preco;
 
 largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
@@ -135,8 +135,36 @@ precoMetroQuadrado = double.Parse(Console.ReadLine(), CultureInfo.InvariantCultu
 area = largura * comprimento;
 preco = area * precoMetroQuadrado;
 
-Console.WriteLine("ÁREA: " + area + CultureInfo.InvariantCulture);
-Console.WriteLine("PREÇO: " + preco.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine("ÁREA: " + area.ToString(CultureInfo.InvariantCulture));
+Console.WriteLine("PREÇO: " + preco.ToString("F2", CultureInfo.InvariantCulture));*/
+
+/*
+int A, B, X;
+
+A = int.Parse(Console.ReadLine());
+B = int.Parse(Console.ReadLine());
+
+X = A + B;
+
+Console.WriteLine("X = " + X);*/
+
+double A, R, Pi;
+
+R = double.Parse(Console.ReadLine());
+Pi = (3.14159);
+A = Pi * Math.Pow(R, 2.0);
+
+Console.WriteLine("A=" + A.ToString("F4"));
+
+
+
+
+
+
+
+
+
+
 
 
 
