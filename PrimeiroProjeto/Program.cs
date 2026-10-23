@@ -147,14 +147,107 @@ B = int.Parse(Console.ReadLine());
 X = A + B;
 
 Console.WriteLine("X = " + X);*/
-
+/*
 double A, R, Pi;
 
 R = double.Parse(Console.ReadLine());
 Pi = (3.14159);
 A = Pi * Math.Pow(R, 2.0);
 
-Console.WriteLine("A=" + A.ToString("F4"));
+Console.WriteLine("A=" + A.ToString("F4"));*/
+
+/*
+int A, B, SOMA;
+
+A = int.Parse(Console.ReadLine());
+B = int.Parse(Console.ReadLine());
+SOMA = A + B;
+
+Console.WriteLine("SOMA = " + SOMA);*/
+
+/*
+int A, B, PROD;
+
+A = int.Parse(Console.ReadLine());
+B = int.Parse(Console.ReadLine());
+PROD = A * B;
+
+Console.WriteLine("PROD = " + PROD);*/
+
+/*
+
+int A, B, C, D, DIFERENCA;
+
+A = int.Parse(Console.ReadLine());
+B = int.Parse(Console.ReadLine());
+C = int.Parse(Console.ReadLine());
+D = int.Parse(Console.ReadLine());
+
+DIFERENCA = (A * B - C * D);
+
+Console.WriteLine("DIFERENÇA = " + DIFERENCA);*/
+
+
+
+/*
+int FUNCIONARIO, HORAS;
+double SALARIO, VALORHORA;
+
+FUNCIONARIO = int.Parse(Console.ReadLine());
+HORAS = int.Parse(Console.ReadLine());
+VALORHORA = double.Parse(Console.ReadLine());
+SALARIO = HORAS * VALORHORA;
+
+Console.WriteLine("NUMBER = " + FUNCIONARIO);
+Console.WriteLine("SALARY = U$ " + SALARIO.ToString("F2"));*/
+
+//// minha maneira de fazer: 
+/*
+int CODIGO1, NUMEROUNIDADES1, CODIGO2, NUMEROUNIDADES2;
+double VALORUNITARIO1, VALORUNITARIO2, VALORTOTAL;
+
+CODIGO1 = int.Parse(Console.ReadLine());
+NUMEROUNIDADES1 = int.Parse(Console.ReadLine());
+VALORUNITARIO1 = double.Parse(Console.ReadLine());
+
+CODIGO2 = int.Parse(Console.ReadLine());
+NUMEROUNIDADES2 = int.Parse(Console.ReadLine());
+VALORUNITARIO2 = double.Parse(Console.ReadLine());
+
+VALORTOTAL = NUMEROUNIDADES1 * VALORUNITARIO1 + NUMEROUNIDADES2 * VALORUNITARIO2;
+
+Console.WriteLine("VALOR A PAGAR: R$ " + VALORTOTAL.ToString("F2", CultureInfo.InvariantCulture));*/
+
+int cod1, cod2, qt1, qt2;
+double preco1, preco2, total;
+
+String[] valores = Console.ReadLine().Split(' ');
+
+cod1 = int.Parse(valores[0]);
+qt1 = int.Parse(valores[1]);
+preco1 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+cod2 = int.Parse(valores[0]);
+qt2 = int.Parse(valores[1]);
+preco2 = double.Parse(valores[2], CultureInfo.InvariantCulture);
+
+total = qt1 * preco1 + qt2 * preco2;
+
+Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
