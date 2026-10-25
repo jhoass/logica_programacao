@@ -218,6 +218,8 @@ VALORTOTAL = NUMEROUNIDADES1 * VALORUNITARIO1 + NUMEROUNIDADES2 * VALORUNITARIO2
 
 Console.WriteLine("VALOR A PAGAR: R$ " + VALORTOTAL.ToString("F2", CultureInfo.InvariantCulture));*/
 
+/*
+
 int cod1, cod2, qt1, qt2;
 double preco1, preco2, total;
 
@@ -227,13 +229,56 @@ cod1 = int.Parse(valores[0]);
 qt1 = int.Parse(valores[1]);
 preco1 = double.Parse(valores[2], CultureInfo.InvariantCulture);
 
+valores = Console.ReadLine().Split(' ');
 cod2 = int.Parse(valores[0]);
 qt2 = int.Parse(valores[1]);
 preco2 = double.Parse(valores[2], CultureInfo.InvariantCulture);
 
-total = qt1 * preco1 + qt2 * preco2;
+total = preco1 * qt1 + preco2 * qt2;
 
-Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine("VALOR A PAGAR: R$ " + total.ToString("F2", CultureInfo.InvariantCulture));*/
+/*
+int distancia;
+double km, media;
+
+distancia = int.Parse(Console.ReadLine());
+km = double.Parse(Console.ReadLine());
+
+media = distancia / km;
+
+Console.WriteLine(media.ToString("F3", CultureInfo.InvariantCulture) + " km/l");*/
+
+
+/*
+int carro90, distancia;
+
+carro90 = int.Parse(Console.ReadLine());
+distancia = carro90 * 2;
+
+Console.WriteLine(distancia + " minutos");*/
+
+/*
+int horas, velocidade;
+double mediaTotal;
+
+
+horas = int.Parse(Console.ReadLine());
+velocidade = int.Parse(Console.ReadLine());
+
+mediaTotal = horas * velocidade / 12.0;
+
+Console.WriteLine(mediaTotal.ToString("F3",CultureInfo.InvariantCulture));*/
+
+double AlunoA, AlunoB;
+
+AlunoA = double.Parse(Console.ReadLine());
+AlunoB = double.Parse(Console.ReadLine());
+
+double media = (AlunoA * 3.50 + AlunoB * 7.50) / 11;
+
+Console.WriteLine("MEDIA = " + media.ToString("F5", CultureInfo.InvariantCulture));
+
+
 
 
 
