@@ -305,6 +305,7 @@ Console.WriteLine("AREA = " + area.ToString("F4", CultureInfo.InvariantCulture))
 Console.WriteLine("PERIMETRO = " + perimetro.ToString("F4", CultureInfo.InvariantCulture));
 Console.WriteLine("DIAGONAL = " + diagonal.ToString("F4", CultureInfo.InvariantCulture));*/
 
+/*
 string nome1, nome2;
 int idade1, idade2;
 double media;
@@ -319,7 +320,25 @@ idade2 = int.Parse(vet[1]);
 
 media = (idade1 + idade2) / 2.0;
 
-Console.WriteLine("A idade média de " + nome1 + " e " + nome2 + " é de " + media.ToString("F1", CultureInfo.InvariantCulture) + " anos");
+Console.WriteLine("A idade média de " + nome1 + " e " + nome2 + " é de " + media.ToString("F1", CultureInfo.InvariantCulture) + " anos");*/
+
+/*
+string nomeVendedor;
+
+double totalVenda, comissao, valorFinal, salario;
+
+nomeVendedor = Console.ReadLine();
+salario = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+totalVenda = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+
+comissao = (totalVenda * 0.15) + salario;
+
+Console.WriteLine("TOTAL = R$ " + comissao.ToString("F2", CultureInfo.InvariantCulture));*/
+
+
+
+
+
 
 
 
