@@ -335,7 +335,7 @@ comissao = (totalVenda * 0.15) + salario;
 
 Console.WriteLine("TOTAL = R$ " + comissao.ToString("F2", CultureInfo.InvariantCulture));*/
 
-
+sdsad
 
 
 
