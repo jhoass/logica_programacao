@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Globalization;
+using System.Transactions;
 
 /*
 String frase = Console.ReadLine();
@@ -269,6 +270,7 @@ mediaTotal = horas * velocidade / 12.0;
 
 Console.WriteLine(mediaTotal.ToString("F3",CultureInfo.InvariantCulture));*/
 
+/*
 double AlunoA, AlunoB;
 
 AlunoA = double.Parse(Console.ReadLine());
@@ -276,7 +278,55 @@ AlunoB = double.Parse(Console.ReadLine());
 
 double media = (AlunoA * 3.50 + AlunoB * 7.50) / 11;
 
-Console.WriteLine("MEDIA = " + media.ToString("F5", CultureInfo.InvariantCulture));
+Console.WriteLine("MEDIA = " + media.ToString("F5", CultureInfo.InvariantCulture));*/
+
+/*
+double AlunoA, AlunoB, AlunoC, media;
+
+AlunoA = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+AlunoB = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+AlunoC = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+media = (AlunoA * 2.0 + AlunoB * 3.0 + AlunoC * 5.0) / 10;
+
+Console.WriteLine("MEDIA = " + media.ToString("F1"), CultureInfo.InvariantCulture);*/
+
+/*
+double A, L, area, perimetro, diagonal;
+
+A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+L = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+area = A * L;
+perimetro = 2.0 * (A + L); // A * 2.0 + L * 2.0;
+diagonal = Math.Sqrt(Math.Pow(A, 2.0) + Math.Pow(L, 2.0));
+
+Console.WriteLine("AREA = " + area.ToString("F4", CultureInfo.InvariantCulture));
+Console.WriteLine("PERIMETRO = " + perimetro.ToString("F4", CultureInfo.InvariantCulture));
+Console.WriteLine("DIAGONAL = " + diagonal.ToString("F4", CultureInfo.InvariantCulture));*/
+
+string nome1, nome2;
+int idade1, idade2;
+double media;
+
+string[] vet = Console.ReadLine().Split(' ');
+nome1 = vet[0];
+idade1 = int.Parse(vet[1]);
+
+vet = Console.ReadLine().Split(' ');
+nome2 = vet[0];
+idade2 = int.Parse(vet[1]);
+
+media = (idade1 + idade2) / 2.0;
+
+Console.WriteLine("A idade média de " + nome1 + " e " + nome2 + " é de " + media.ToString("F1", CultureInfo.InvariantCulture) + " anos");
+
+
+
+
+
+
+
 
 
 
