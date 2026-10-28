@@ -343,6 +343,30 @@ resultado =  (4/3.0) * pi * Math.Pow(raio, 3.0);
 
 Console.WriteLine("VOLUME = " + resultado.ToString("F3", CultureInfo.InvariantCulture));*/
 
+double A, B, C, Pi = 3.14159;
+
+string[] vet = Console.ReadLine().Split(' ');
+A = double.Parse(vet[0],CultureInfo.InvariantCulture);
+B = double.Parse(vet[1], CultureInfo.InvariantCulture);
+C = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+double areaTriangulo = (A * C) / 2.0;
+double circuloRaio = Pi * Math.Pow(C, 2.0);
+double trapezio = (A + B) * C / 2.0;
+double quadrado = Math.Pow(B, 2.0);
+double retangulo = A * B;
+
+Console.WriteLine("TRIÂNGULO: " + areaTriangulo.ToString("F3"), CultureInfo.InvariantCulture);
+Console.WriteLine("CÍRCULO: " + circuloRaio.ToString("F3", CultureInfo.InvariantCulture));
+Console.WriteLine("TRAPÉZIO: " + trapezio.ToString("F3", CultureInfo.InvariantCulture));
+Console.WriteLine("QUADRADO: " + quadrado.ToString("F3", CultureInfo.InvariantCulture));
+Console.WriteLine("RETÂNGULO " + retangulo.ToString("F3", CultureInfo.InvariantCulture));
+
+
+
+
+
+
 
 
 
