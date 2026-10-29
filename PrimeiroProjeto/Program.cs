@@ -343,6 +343,7 @@ resultado =  (4/3.0) * pi * Math.Pow(raio, 3.0);
 
 Console.WriteLine("VOLUME = " + resultado.ToString("F3", CultureInfo.InvariantCulture));*/
 
+/*
 double A, B, C, Pi = 3.14159;
 
 string[] vet = Console.ReadLine().Split(' ');
@@ -360,7 +361,45 @@ Console.WriteLine("TRIÂNGULO: " + areaTriangulo.ToString("F3"), CultureInfo.Inv
 Console.WriteLine("CÍRCULO: " + circuloRaio.ToString("F3", CultureInfo.InvariantCulture));
 Console.WriteLine("TRAPÉZIO: " + trapezio.ToString("F3", CultureInfo.InvariantCulture));
 Console.WriteLine("QUADRADO: " + quadrado.ToString("F3", CultureInfo.InvariantCulture));
-Console.WriteLine("RETÂNGULO " + retangulo.ToString("F3", CultureInfo.InvariantCulture));
+Console.WriteLine("RETÂNGULO " + retangulo.ToString("F3", CultureInfo.InvariantCulture));*/
+
+/*
+int a, b, c;
+
+string[] vet = Console.ReadLine().Split(' ');
+
+a = int.Parse(vet[0]);
+b = int.Parse(vet[1]);
+c = int.Parse(vet[2]);
+
+
+int maiorAB = (a + b + Math.Abs(a - b)) / 2;
+
+int maiorFinal = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
+
+Console.WriteLine(maiorFinal + " eh o maior");*/
+
+double x1, y1, x2, y2;
+
+string[] vet = Console.ReadLine().Split(' ');
+x1 = double.Parse(vet [0], CultureInfo.InvariantCulture);
+y1 = double.Parse(vet [1], CultureInfo.InvariantCulture);
+
+vet = Console.ReadLine().Split(' ');
+x2 = double.Parse(vet [0], CultureInfo.InvariantCulture);
+y2 = double.Parse(vet[1], CultureInfo.InvariantCulture);
+
+double distancia = Math.Sqrt(Math.Pow(x2 - x1, 2.0) + Math.Pow(y2 - y1, 2.0));
+
+Console.WriteLine(distancia.ToString("F4",CultureInfo.InvariantCulture));
+
+
+
+
+
+
+
+
 
 
 
