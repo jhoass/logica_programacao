@@ -378,7 +378,7 @@ int maiorAB = (a + b + Math.Abs(a - b)) / 2;
 int maiorFinal = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
 
 Console.WriteLine(maiorFinal + " eh o maior");*/
-
+/*
 double x1, y1, x2, y2;
 
 string[] vet = Console.ReadLine().Split(' ');
@@ -391,7 +391,68 @@ y2 = double.Parse(vet[1], CultureInfo.InvariantCulture);
 
 double distancia = Math.Sqrt(Math.Pow(x2 - x1, 2.0) + Math.Pow(y2 - y1, 2.0));
 
-Console.WriteLine(distancia.ToString("F4",CultureInfo.InvariantCulture));
+Console.WriteLine(distancia.ToString("F4",CultureInfo.InvariantCulture));*/
+/*
+int N, horas, resto, minutos, segundos;
+
+N = int.Parse(Console.ReadLine());
+
+horas = N / 3600;
+
+resto = N % 3600;
+
+minutos = resto / 60;
+segundos = resto % 60;
+
+Console.WriteLine(horas + ":" + minutos + ":" + segundos);*/
+/*
+int N;
+
+N = int.Parse(Console.ReadLine());
+
+int notas100 = N / 100;
+int resto = N % 100;
+
+int notas50 = resto / 50;
+resto = resto % 50;
+
+int notas20 = resto / 20;
+resto = resto % 20;
+
+int notas10 = resto / 10;
+resto = resto % 10;
+
+int notas5 = resto / 5;
+resto = resto % 5;
+
+int notas2 = resto / 2;
+resto = resto % 2;
+
+int notas1 = resto / 1;
+resto = resto % 1;
+
+Console.WriteLine(N);
+Console.WriteLine(notas100 + " nota(s) de R$ 100,00");
+Console.WriteLine(notas50 + " nota(s) de R$ 50,00");
+Console.WriteLine(notas20 + " nota(s) de R$ 20,00");
+Console.WriteLine(notas10 + " nota(s) de R$ 10,00");
+Console.WriteLine(notas5 + " nota(s) de R$ 5,00");
+Console.WriteLine(notas2 + " nota(s) de R$ 2,00");
+Console.WriteLine(notas1 + " nota(s) de R$ 1,00");*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
