@@ -439,6 +439,157 @@ Console.WriteLine(notas10 + " nota(s) de R$ 10,00");
 Console.WriteLine(notas5 + " nota(s) de R$ 5,00");
 Console.WriteLine(notas2 + " nota(s) de R$ 2,00");
 Console.WriteLine(notas1 + " nota(s) de R$ 1,00");*/
+/*
+int idade;
+
+idade = int.Parse(Console.ReadLine());
+
+int anos = idade / 365;
+int resto = idade % 365;
+
+int mes = resto / 30;
+resto = resto % 30;
+
+int dias = resto;
+
+Console.WriteLine(anos + " anos(s)");
+Console.WriteLine(mes + " mes(s)");
+Console.WriteLine(dias + " dia(s)");*/
+/*
+double N;
+int quociente, resto, nota, moeda;
+
+N = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+resto = (int)(N * 100.0 + 0.05);
+
+Console.WriteLine("NOTAS:");
+
+nota = 100;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 50;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 20;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 10;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 5;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+moeda = 100;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 1.00");
+resto = resto % moeda;
+
+moeda = 50;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.50");
+resto = resto % moeda;
+
+moeda = 25;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.25");
+resto = resto % moeda;
+
+moeda = 10;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.10");
+resto = resto % moeda;
+
+moeda = 5;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.05");
+resto = resto % moeda;
+
+Console.WriteLine(resto + " moeda(s) de R$ 0.01");*/
+
+
+
+
+
+
+/*
+int horas;
+
+Console.WriteLine("Qual o horario?");
+
+horas = int.Parse(Console.ReadLine());
+
+if(horas <= 12)
+{
+    Console.WriteLine("Bom dia");
+}
+else if( horas <= 17)
+{
+    Console.WriteLine("Boa tarde");
+}
+else if( horas <= 23)
+{
+    Console.WriteLine("Boa noite");
+}
+else
+{
+    Console.WriteLine("Digite um horario real!"); 
+}*/
+
+/*
+
+Console.WriteLine("Digite um horário");
+
+int horas;
+
+horas = int.Parse(Console.ReadLine());
+
+if(horas >= 1)
+{
+    Console.WriteLine("Bom dia");
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
