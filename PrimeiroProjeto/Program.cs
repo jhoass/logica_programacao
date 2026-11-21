@@ -378,7 +378,7 @@ int maiorAB = (a + b + Math.Abs(a - b)) / 2;
 int maiorFinal = (maiorAB + c + Math.Abs(maiorAB - c)) / 2;
 
 Console.WriteLine(maiorFinal + " eh o maior");*/
-
+/*
 double x1, y1, x2, y2;
 
 string[] vet = Console.ReadLine().Split(' ');
@@ -391,7 +391,614 @@ y2 = double.Parse(vet[1], CultureInfo.InvariantCulture);
 
 double distancia = Math.Sqrt(Math.Pow(x2 - x1, 2.0) + Math.Pow(y2 - y1, 2.0));
 
-Console.WriteLine(distancia.ToString("F4",CultureInfo.InvariantCulture));
+Console.WriteLine(distancia.ToString("F4",CultureInfo.InvariantCulture));*/
+/*
+int N, horas, resto, minutos, segundos;
+
+N = int.Parse(Console.ReadLine());
+
+horas = N / 3600;
+
+resto = N % 3600;
+
+minutos = resto / 60;
+segundos = resto % 60;
+
+Console.WriteLine(horas + ":" + minutos + ":" + segundos);*/
+/*
+int N;
+
+N = int.Parse(Console.ReadLine());
+
+int notas100 = N / 100;
+int resto = N % 100;
+
+int notas50 = resto / 50;
+resto = resto % 50;
+
+int notas20 = resto / 20;
+resto = resto % 20;
+
+int notas10 = resto / 10;
+resto = resto % 10;
+
+int notas5 = resto / 5;
+resto = resto % 5;
+
+int notas2 = resto / 2;
+resto = resto % 2;
+
+int notas1 = resto / 1;
+resto = resto % 1;
+
+Console.WriteLine(N);
+Console.WriteLine(notas100 + " nota(s) de R$ 100,00");
+Console.WriteLine(notas50 + " nota(s) de R$ 50,00");
+Console.WriteLine(notas20 + " nota(s) de R$ 20,00");
+Console.WriteLine(notas10 + " nota(s) de R$ 10,00");
+Console.WriteLine(notas5 + " nota(s) de R$ 5,00");
+Console.WriteLine(notas2 + " nota(s) de R$ 2,00");
+Console.WriteLine(notas1 + " nota(s) de R$ 1,00");*/
+/*
+int idade;
+
+idade = int.Parse(Console.ReadLine());
+
+int anos = idade / 365;
+int resto = idade % 365;
+
+int mes = resto / 30;
+resto = resto % 30;
+
+int dias = resto;
+
+Console.WriteLine(anos + " anos(s)");
+Console.WriteLine(mes + " mes(s)");
+Console.WriteLine(dias + " dia(s)");*/
+/*
+double N;
+int quociente, resto, nota, moeda;
+
+N = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+resto = (int)(N * 100.0 + 0.05);
+
+Console.WriteLine("NOTAS:");
+
+nota = 100;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 50;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 20;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 10;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+nota = 5;
+quociente = resto / (nota * 100);
+Console.WriteLine(quociente + " nota(s) de R$ " + nota + ".00");
+resto = resto % (nota * 100);
+
+moeda = 100;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 1.00");
+resto = resto % moeda;
+
+moeda = 50;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.50");
+resto = resto % moeda;
+
+moeda = 25;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.25");
+resto = resto % moeda;
+
+moeda = 10;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.10");
+resto = resto % moeda;
+
+moeda = 5;
+quociente = resto / moeda;
+Console.WriteLine(quociente + " moeda(s) de R$ 0.05");
+resto = resto % moeda;
+
+Console.WriteLine(resto + " moeda(s) de R$ 0.01");*/
+
+
+
+
+
+
+/*
+int horas;
+
+Console.WriteLine("Qual o horario?");
+
+horas = int.Parse(Console.ReadLine());
+
+if(horas <= 12)
+{
+    Console.WriteLine("Bom dia");
+}
+else if( horas <= 17)
+{
+    Console.WriteLine("Boa tarde");
+}
+else if( horas <= 23)
+{
+    Console.WriteLine("Boa noite");
+}
+else
+{
+    Console.WriteLine("Digite um horario real!"); 
+}*/
+
+/*
+
+Console.WriteLine("Digite um horário");
+
+int horas;
+
+horas = int.Parse(Console.ReadLine());
+
+if(horas >= 1)
+{
+    Console.WriteLine("Bom dia");
+}*/
+
+/*
+int horas;
+
+horas = int.Parse(Console.ReadLine());
+
+if (horas < 12)
+{
+    Console.WriteLine("Bom dia");
+}
+else
+{
+    if(horas < 18)
+    {
+        Console.WriteLine("Boa tarde");
+
+    }
+    else
+    {
+        Console.WriteLine("Boa noite");
+    }
+}*/
+/*
+double Nota1, Nota2, somaNota, NotaFinal;
+
+Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+somaNota = (Nota1 + Nota2);
+
+Console.WriteLine("NOTA FINAL = " + somaNota.ToString("F1"), CultureInfo.InvariantCulture);
+
+if(somaNota < 60.0)
+{
+
+    Console.WriteLine("REPROVADO");
+}
+
+/*
+if(somaNota > 60.0)
+{
+    Console.WriteLine("NOTA FINAL = " + somaNota.ToString("F1"),CultureInfo.InvariantCulture);
+}
+else
+{
+    if(somaNota < 60.0)
+    {
+        Console.WriteLine("NOTA FINAL = " + somaNota.ToString("F1"), CultureInfo.InvariantCulture + " REPROVADO");
+    }
+}
+
+*/
+
+/*
+{
+    Console.WriteLine("NOTA FINAL = " + somaNota.ToString("F1"), CultureInfo.InvariantCulture + " REPROVADO");
+}*/
+/*
+double a, b, c, delta, r1, r2;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+
+
+a = double.Parse(vet[0], CultureInfo.InvariantCulture);
+b = double.Parse(vet[1], CultureInfo.InvariantCulture);
+c = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+delta = Math.Pow(b, 2.0) - 4 * a * c;
+
+if( a == 0 || delta < 0.0)
+{
+    Console.WriteLine("Impossivel calcular");
+}
+else
+{
+    r1 = (-b + Math.Sqrt(delta)) / (2.0 * a);
+    r2 = (-b - Math.Sqrt(delta)) / (2.0 * a);
+    Console.WriteLine("R1 = " + r1.ToString("F5", CultureInfo.InvariantCulture));
+    Console.WriteLine("R2 = " + r2.ToString("F5", CultureInfo.InvariantCulture));
+
+
+}
+*/
+
+/*
+int x, y, z;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+x = int.Parse(vet[0]);
+y = int.Parse(vet[1]);
+z = int.Parse(vet[2]);
+
+if (x < y && x < z)
+{
+    Console.WriteLine("MENOR = " + x);
+
+}
+else if (y < z)
+{
+    Console.WriteLine("MENOR = " + y);
+}
+else {
+    Console.WriteLine("MENOR = " + z);
+}
+*/
+/*
+int x, y, z;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+x = int.Parse(vet[0]);
+y = int.Parse(vet[1]);
+z = int.Parse(vet[2]);
+
+if (x < y && x < z)
+{
+    Console.WriteLine("MENOR = " + x);
+}
+else if(y < z) {
+    Console.WriteLine("MENOR = " + y);
+}
+else
+{
+    Console.WriteLine("MENOR = " + z);
+}
+*/
+
+/*
+
+int minutos;
+double conta;
+
+minutos = int.Parse(Console.ReadLine());
+
+conta = 50.0;
+if (minutos > 100)
+{
+    conta = conta + (minutos - 100) * 2.0;
+}
+
+Console.WriteLine("Valor a pagar: R$ " + conta.ToString("F2", CultureInfo.InvariantCulture)); 
+
+
+*/
+/*
+int semana;
+string dia = "";
+
+
+semana = int.Parse(Console.ReadLine());
+
+switch (semana) {
+    case 1:
+        dia = "domingo";
+        break;
+    case 2:
+        dia = "segunda";
+        break;
+    case 3:
+        dia = "terça";
+        break;
+    case 4:
+        dia = "quarta";
+        break;
+    case 5:
+        dia = "quinta";
+        break;
+    case 6:
+        dia = "sexta";
+        break;
+    case 7:
+        dia = "sabado";
+        break;
+    default:
+        dia = "valor inválido";
+        break;
+
+}
+
+Console.WriteLine("Dia da semana: " + dia);
+*/
+/*
+int A, B, C, D, somaCeD, somaAeB;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+A = int.Parse(vet[0]);
+B = int.Parse(vet[1]);
+C = int.Parse(vet[2]);
+D = int.Parse(vet[3]);
+
+somaCeD = C + D;
+somaAeB = A + B;
+
+if((B > C && D > A) && somaCeD > somaAeB && C > 0 && D > 0 && A % 2 == 0)
+{
+    Console.WriteLine("Valores aceitos");
+}
+else
+{
+    Console.WriteLine("Valores nao aceitos");
+}
+
+*/
+
+/*
+
+int X, Y;
+
+Console.WriteLine("Código do produto e quantidade por favor, Obs: digíte os 2 na mesma linha.");
+
+string[] vet = Console.ReadLine().Split(' ');
+
+double preco = 0.0, soma;
+
+string especificacao;
+
+X = int.Parse(vet[0]);
+Y = int.Parse(vet[1]);
+
+switch (X)
+{
+    case 1:
+        especificacao = "Cachorro Quente";
+        preco = 4.0;
+        break;
+    case 2:
+        especificacao = "X-salada";
+        preco = 4.50;
+        break;
+    case 3:
+        especificacao = "X-Bacon";
+        preco = 5.00;
+        break;
+    case 4:
+        especificacao = "Torrada simples";
+        preco = 2.00;
+        break;
+    case 5:
+        especificacao = "Refrigerante";
+        preco = 1.50;
+        break;
+    default:
+        Console.WriteLine("Digite um código de 1 a 5!");
+        break;
+}
+
+
+soma = Y * preco;
+
+Console.WriteLine("Total: R$ " + soma.ToString("F2",CultureInfo.InvariantCulture));
+
+Console.ReadLine();
+*/
+
+/*
+string multiplo = "";
+
+int A, B;
+
+String[] vet = Console.ReadLine().Split(' ');
+
+A = int.Parse(vet[0]);
+B = int.Parse(vet[1]);
+
+if (A % B == 0 || B % A == 0)
+{
+    multiplo = "São Multiplos";
+
+}
+else
+{
+    multiplo = "Nao sao Multiplos";
+
+}
+
+Console.WriteLine(multiplo);*/
+
+/*
+
+int inicio, termino, duracao;
+
+string[] vet = Console.ReadLine().Split(' ');
+
+inicio = int.Parse(vet[0]);
+termino = int.Parse(vet[1]);
+
+if (termino > inicio) {
+
+    duracao = termino - inicio;
+
+}
+else
+{
+    duracao = (24 - inicio) + termino;
+}
+
+Console.WriteLine("O JOGO DUROU " + duracao + " HORA(S)");
+*/
+
+
+int porcentual = 0;
+
+double salario, ajuste = 0, ganho = 0;
+
+salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+if (salario >= 0 && salario <= 400.00)
+{
+    ajuste = salario * 1.15;
+    ganho = ajuste - salario;
+    porcentual = 15;
+} else if (salario >= 400.01 && salario <= 800.00)
+{
+    ajuste = salario * 1.12;
+    ganho = ajuste - salario;
+    porcentual = 12;
+} else if (salario >= 800.01 && salario <= 1200.00)
+{
+    ajuste = salario * 1.10;
+    ganho = ajuste - salario;
+    porcentual = 10;
+} else if (salario >= 1200.00 && salario <= 2000.00)
+{
+    ajuste = salario * 1.07;
+    ganho = ajuste - salario;
+    porcentual = 7;
+}else if (salario > 2000.00)
+{
+    ajuste = salario * 1.04;
+    ganho = ajuste - salario;
+    porcentual = 4;
+}
+
+Console.WriteLine("Novo Salário: " + ajuste.ToString("F2",CultureInfo.InvariantCulture));
+Console.WriteLine("Reajuste ganho: " + ganho.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine("Em percentual: " + porcentual + "%");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+if (semana == 1)
+{
+    dia = "Domingo";
+} else if (semana == 2)
+{
+    dia = "Segunda";
+} else if (semana == 3)
+{
+    dia = "Terça";
+} else if (semana == 4)
+{
+    dia = "Quarta";
+} else if (semana == 5)
+{
+    dia = "Quinta";
+}else if(semana == 6)
+{
+    dia = "Sexta";
+}else if(semana == 7)
+{
+    dia = "Sábado";
+}
+else
+{
+    dia = "Valor inválido!";
+}
+
+Console.WriteLine("Dia da semana: " + dia);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
